@@ -1,0 +1,1 @@
+#generador de ideas
