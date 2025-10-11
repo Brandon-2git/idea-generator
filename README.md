@@ -1,2 +1,1 @@
-<<<<<<< HEAD
 #generador de ideas
