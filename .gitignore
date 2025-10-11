@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Carpetas de compilación
+dist/
+build/
+
+# Configuración de editor
+.vscode/
+
+# Logs
+*.log
