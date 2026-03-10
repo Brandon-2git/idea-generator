@@ -1,24 +1,111 @@
-body {
-    font-family: Arial;
-    max-width: 600px;
-    margin: 40px auto;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+    text-align:center;
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
+h1{
+    margin-top:40px;
 }
 
-button {
-    margin-top: 10px;
-    padding: 8px 12px;
+.subtitle{
+    color:gray;
+    margin-bottom:30px;
 }
 
-#response {
-    margin-top: 20px;
-    font-weight: bold;
+/**{
+    box-sizing: border-box;
+}*/
+
+/* tarjeta principal */
+.card{
+    background:white;
+    width:600px;
+    margin:auto;
+    padding:30px;
+    border-radius:30px;
+    box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+    text-align:left;
 }
 
-small {
-    color: gray;
+/* estado */
+.status{
+    background:#d7e5ff;
+    color:#3b5ed7;
+    padding:8px;
+    border-radius:8px;
+    width:130px;
+    text-align:center;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+/* contenedor del textarea */
+.input-container{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+
+/* textarea estilo moderno */
+textarea{
+    width:100%;
+    height:70px;
+    padding:15px;
+    padding-right:45px;
+    border-radius:15px;
+    border:2px solid #d9d9d9;
+    font-size:16px;
+    resize:none; /* evita que el usuario lo agrande */
+    outline:none;
+    box-sizing: border-box; /*Evita que se salga del contenedor*/
+}
+
+/* efecto al seleccionar */
+textarea:focus{
+    border-color:#6f5eff;
+}
+
+/* icono dentro del input */
+.icon{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+    color:#bbb;
+}
+
+/* contador */
+small{
+    display:block;
+    margin-top:5px;
+    color:gray;
+}
+
+/* boton */
+button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(90deg,#5f6cff,#6f5eff);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+/* area de respuesta */
+.response{
+    margin-top:25px;
+    padding:20px;
+    background:#f5f5f5;
+    border-radius:10px;
+    text-align:center;
+    color:#666;
 }

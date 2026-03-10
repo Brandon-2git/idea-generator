@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Generador de Ideas</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>IdeaSpark</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<h2>Generador de Ideas (PoC)</h2>
+<h1>IdeaSpark</h1>
+<p class="subtitle">Generador de ideas Creativas con IA</p>
 
-<label>Describe tu idea (máximo 30 palabras):</label>
-<textarea id="prompt"></textarea>
-<small id="wordCount">0 / 30 palabras</small>
-<br>
-<button id="sendBtn">Enviar</button>
+<div class="card">
 
-<div id="response"></div>
+    <div id ="status" class="status">Estado inicial</div>
 
-<script src="/backend/script.js"></script>
+    <label>Campo de Texto</label>
+
+    <div class="input-container">
+        <textarea id="prompt" placeholder="Introduce tu idea o concepto aquí..."></textarea>
+        <span class="icon">💡</span>
+    </div>
+
+    <small id="wordCount">0 / 30 palabras</small>
+
+    <button id="sendBtn">✏ Generar Ideas</button>
+
+    <div id="response" class="response">
+        <p>Las ideas generadas aparecerán aquí</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
