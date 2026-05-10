@@ -107,13 +107,13 @@ const API_URL = "https://TU_ENDPOINT/prod/generar";
 
 ### 6. Ejecutar frontend
 
-Iniciar servidor local:
+Desde la raíz del proyecto ejecutar:
 
 ```bash
 node servidor.js
 ```
 
-Abrir en navegador:
+Después abrir en el navegador:
 
 ```text
 http://localhost:3000
@@ -123,4 +123,19 @@ http://localhost:3000
 
 ## Notas de seguridad
 
-El endpoint no se incluye en el repositorio para evitar uso no autorizado del servicio y consumo innecesario de recursos AWS.
+El endpoint público de API Gateway no se incluye en el repositorio para evitar uso no autorizado del servicio y consumo innecesario de recursos AWS.
+
+Para probar el proyecto es necesario desplegar la infraestructura en una cuenta propia de AWS y configurar manualmente el endpoint generado por API Gateway.
+
+Se recomienda contemplar los siguientes aspectos antes de realizar el despliegue:
+
+- Tener acceso habilitado a Amazon Bedrock en la región `us-east-1`
+- Contar con credenciales configuradas mediante AWS CLI
+- Tener permisos IAM para desplegar recursos con AWS CDK
+- Considerar posibles costos asociados al uso de:
+  - AWS Lambda
+  - API Gateway
+  - Amazon Bedrock
+  - CloudWatch
+- Verificar que el modelo `amazon.nova-lite-v1:0` se encuentre habilitado en la cuenta AWS
+- Ejecutar `cdk bootstrap` antes del primer despliegue
