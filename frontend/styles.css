@@ -109,3 +109,98 @@ button:hover{
     text-align:center;
     color:#666;
 }
+
+/* estado error */
+.status.error {
+    background: #fde2e2;
+    color: #b42318;
+}
+
+/* estado cargando */
+.status.loading {
+    background: #fff2cc;
+    color: #a66100;
+}
+
+/* respuesta error */
+.response.error {
+    background: #fde2e2;
+    border: 2px dashed #f5b5b5;
+    color: #b42318;
+}
+
+/* respuesta normal */
+.response.success {
+   background: #ffffff; /* Cambiado a blanco puro */
+    color: #333; /* Un borde sutil para que no se pierda con el fondo del sitio */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+/* Contenedor general */
+.ideas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Estilo de la tarjeta de idea */
+.idea-card {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s forwards;
+    text-align: left; /* Alinea el texto a la izquierda como en tu imagen */
+}
+
+/* El círculo del número */
+.number {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Colores dinámicos (Azul, Verde, Morado) */
+.color-1 { background-color: #e1efff; }
+.color-1 .number { background-color: #007bff; }
+
+.color-2 { background-color: #e2f0e4; }
+.color-2 .number { background-color: #4caf50; }
+
+.color-3 { background-color: #f3e8ff; }
+.color-3 .number { background-color: #a855f7; }
+
+.response ul {
+    text-align: center; /* Cambia de left a center si quieres que coincida con tu diseño */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-type: none !important; /* Fuerza la desaparición del punto */
+}
+
+.response li {
+    margin-bottom: 8px;
+    list-style: none;
+    display: block; /* Esto asegura que se comporte como bloque y no como ítem de lista */
+}
+
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

@@ -51,7 +51,9 @@ export class InfraStack extends cdk.Stack {
     generar.addMethod(
       'POST',
       // Se integra la API con lambda
-      new apigateway.LambdaIntegration(generadorIdeasLambda)
+      new apigateway.LambdaIntegration(generadorIdeasLambda,{
+        proxy: true
+      })
     );
   }
 }
